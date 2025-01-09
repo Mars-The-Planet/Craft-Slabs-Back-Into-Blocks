@@ -13,7 +13,7 @@
 <center><b>slabBlockList</b> - List of strings specifying which slabs are converted into which blocks in this pattern: <code>"slabname, blockname, pattern(not necessary)"</code></center>
 <br>
 <center>
-<p><strong>Few examples:</strong><center><code>"minecraft:smooth_stone_slab, minecraft:smooth_stone",</code>
+<p><strong>Few examples:</strong><code>"minecraft:smooth_stone_slab, minecraft:smooth_stone",</code>
 <img src="https://i.imgur.com/21wK6tK.png"/></p>
 <p><code>"minecraft:cut_copper_slab, minecraft:cut_copper, -",</code>
 <img src="https://i.imgur.com/PE1Yjew.png"/></p>
