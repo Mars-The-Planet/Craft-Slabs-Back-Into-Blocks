@@ -13,3 +13,4 @@ build
 eclipse
 run
 runs
+/.gradle/
