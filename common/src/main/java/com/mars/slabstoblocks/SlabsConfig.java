@@ -9,12 +9,9 @@ public class SlabsConfig extends DeimosConfig {
     @Entry public static List<String> slabBlockList = Lists.newArrayList(
             "minecraft:acacia_slab, minecraft:acacia_planks",
             "minecraft:andesite_slab, minecraft:andesite",
-            "minecraft:bamboo_mosaic_slab, minecraft:bamboo_mosaic",
-            "minecraft:bamboo_slab, minecraft:bamboo_planks, -",
             "minecraft:birch_slab, minecraft:birch_planks",
             "minecraft:blackstone_slab, minecraft:blackstone",
             "minecraft:brick_slab, minecraft:bricks",
-            "minecraft:cherry_slab, minecraft:cherry_planks",
             "minecraft:cobbled_deepslate_slab, minecraft:cobbled_deepslate",
             "minecraft:cobblestone_slab, minecraft:cobblestone",
             "minecraft:crimson_slab, minecraft:crimson_planks",
