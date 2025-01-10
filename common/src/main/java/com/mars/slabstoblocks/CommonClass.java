@@ -23,36 +23,36 @@ public class CommonClass {
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(new ResourceLocation(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "##"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        new ResourceLocation(set[1]), 1);
             } else if (current.contains("/")) {
                 DeimosRecipeGenerator.createShapedRecipeJson(
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(new ResourceLocation(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "# ",
                                 " #"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        new ResourceLocation(set[1]), 1);
             } else {
                 DeimosRecipeGenerator.createShapedRecipeJson(
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(new ResourceLocation(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "#",
                                 "#"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        new ResourceLocation(set[1]), 1);
             }
         }
     }
