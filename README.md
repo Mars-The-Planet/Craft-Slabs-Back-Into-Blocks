@@ -23,11 +23,11 @@ This is a not part of the default config it is just an example of what you can d
 </center>
 </details>
 <center><p style="text-align: center;">
-<img src="https://i.imgur.com/oLLkoRH.png"/>
+<img src="https://i.imgur.com/JNZ2GMV.png"/>
 <a href="https://www.curseforge.com/minecraft/mc-mods/deimos-fabric-forge-neoforge" rel="nofollow">
-<img src="https://i.imgur.com/6xg4Opb.png"/></a>
+<img src="https://i.imgur.com/83sD0W8.png"/></a>
 <a href="https://modrinth.com/mod/deimos" rel="nofollow">
-<img src="https://i.imgur.com/iy76bgp.png"/></a>
+<img src="https://i.imgur.com/j2GIPnt.png"/></a>
 </p></center>
 <p style="text-align: center;"><a href="https://url-shortener.curseforge.com/oNMBl" rel="nofollow">
 <img src="https://i.imgur.com/y3LiTfU.png"/></a></p>
