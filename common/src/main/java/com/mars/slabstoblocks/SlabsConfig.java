@@ -6,7 +6,8 @@ import com.mars.deimos.config.DeimosConfig;
 import java.util.List;
 
 public class SlabsConfig extends DeimosConfig {
-    @Entry public static List<String> slabBlockList = Lists.newArrayList("minecraft:acacia_slab, minecraft:acacia_planks",
+    @Entry public static List<String> slabBlockList = Lists.newArrayList(
+            "minecraft:acacia_slab, minecraft:acacia_planks",
             "minecraft:andesite_slab, minecraft:andesite",
             "minecraft:bamboo_mosaic_slab, minecraft:bamboo_mosaic",
             "minecraft:bamboo_slab, minecraft:bamboo_planks, -",
@@ -42,6 +43,7 @@ public class SlabsConfig extends DeimosConfig {
             "minecraft:polished_deepslate_slab, minecraft:polished_deepslate",
             "minecraft:polished_diorite_slab, minecraft:polished_diorite",
             "minecraft:polished_granite_slab, minecraft:polished_granite",
+            "minecraft:polished_tuff_slab, minecraft:polished_tuff",
             "minecraft:prismarine_brick_slab, minecraft:prismarine_bricks",
             "minecraft:prismarine_slab, minecraft:prismarine",
             "minecraft:purpur_slab, minecraft:purpur_block, -",
@@ -56,6 +58,8 @@ public class SlabsConfig extends DeimosConfig {
             "minecraft:spruce_slab, minecraft:spruce_planks",
             "minecraft:stone_brick_slab, minecraft:stone_bricks, -",
             "minecraft:stone_slab, minecraft:stone",
+            "minecraft:tuff_brick_slab, minecraft:tuff_bricks, -",
+            "minecraft:tuff_slab, minecraft:tuff, -",
             "minecraft:warped_slab, minecraft:warped_planks",
             "minecraft:waxed_cut_copper_slab, minecraft:waxed_cut_copper, -",
             "minecraft:waxed_exposed_cut_copper_slab, minecraft:waxed_exposed_cut_copper, -",
