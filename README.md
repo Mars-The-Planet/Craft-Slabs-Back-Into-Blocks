@@ -1,31 +1,33 @@
-# MultiLoader Template
-
-This project provides a Gradle project template that can compile mods for both Forge and Fabric using a common sourceset. This project does not require any third party libraries or dependencies. If you have any questions or want to discuss the project join our [Discord](https://discord.myceliummod.network).
-
-## Getting Started
-
-### IntelliJ IDEA
-This guide will show how to import the MultiLoader Template into IntelliJ IDEA. The setup process is roughly equivalent to setting up Forge and Fabric independently and should be very familiar to anyone who has worked with their MDKs.
-
-1. Clone or download this repository to your computer.
-2. Configure the project by editing the `group`, `mod_name`, `mod_author`, and `mod_id` properties in the `gradle.properties` file. You will also need to change the `rootProject.name`  property in `settings.gradle`, this should match the folder name of your project, or else IDEA may complain.
-3. Open the template's root folder as a new project in IDEA. This is the folder that contains this README file and the gradlew executable.
-4. If your default JVM/JDK is not Java 17 you will encounter an error when opening the project. This error is fixed by going to `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`and changing the value to a valid Java 17 JVM. You will also need to set the Project SDK to Java 17. This can be done by going to `File > Project Structure > Project SDK`. Once both have been set open the Gradle tab in IDEA and click the refresh button to reload the project.
-5. Open the Gradle tab in IDEA if it has not already been opened. Navigate to `Your Project > Common > Tasks > vanilla gradle > decompile`. Run this task to decompile Minecraft.
-6. Open the Gradle tab in IDEA if it has not already been opened. Navigate to `Your Project > Forge > Tasks > forgegradle runs > genIntellijRuns`. Run this task to set up run configurations for Forge.
-7. Open your Run/Debug Configurations. Under the Application category there should now be options to run Forge and Fabric projects. Select one of the client options and try to run it.
-8. Assuming you were able to run the game in step 7 your workspace should now be set up.
-
-### Eclipse
-While it is possible to use this template in Eclipse it is not recommended. During the development of this template multiple critical bugs and quirks related to Eclipse were found at nearly every level of the required build tools. While we continue to work with these tools to report and resolve issues support for projects like these are not there yet. For now Eclipse is considered unsupported by this project. The development cycle for build tools is notoriously slow so there are no ETAs available.
-
-## Development Guide
-When using this template the majority of your mod is developed in the Common project. The Common project is compiled against the vanilla game and is used to hold code that is shared between the different loader-specific versions of your mod. The Common project has no knowledge or access to ModLoader specific code, apis, or concepts. Code that requires something from a specific loader must be done through the project that is specific to that loader, such as the Forge or Fabric project.
-
-Loader specific projects such as the Forge and Fabric project are used to load the Common project into the game. These projects also define code that is specific to that loader. Loader specific projects can access all of the code in the Common project. It is important to remember that the Common project can not access code from loader specific projects.
-
-## Removing Platforms and Loaders
-While the MultiLoader Template includes support for many platforms and loaders you can easily remove support for the ones you don't need. This can be done by deleting the subproject folder and then removing it from the `settings.gradle` file. For example if you wanted to remove support for Forge you would follow the following steps. 
-
-1. Delete the subproject folder. For example, delete `MultiLoader-Template/forge`.
-2. Remove the project from `settings.gradle`. For example, remove `include("forge")`. 
+<h1><img src="https://i.imgur.com/Im9VgDK.png" alt="Title"/></h1>
+<center><h5 style="text-align: center;"><strong> 
+<a href="https://discord.gg/2CUh6gMuCt" ><img src="https://img.shields.io/discord/1027252425960198165?color=5b6ee1&amp;label=Discord&amp;style=for-the-badge&amp;logo=discord&amp;logoColor=white" alt="Discord" /></a> 
+<a href="https://ko-fi.com/mars_" ><img src="https://img.shields.io/badge/ko--fi-donate-FF5E5B?style=for-the-badge&amp;logo=ko-fi&amp;logoColor=white" alt="Support me on ko-fi" /></a>
+<a href="https://www.curseforge.com/minecraft/mc-mods/craft-slabs-back-into-blocks" ><img src="https://img.shields.io/curseforge/dt/704296?color=F16436&amp;logo=curseforge&amp;logoColor=white&amp;label=Curseforge&amp;style=for-the-badge" alt="CurseForge" /></a>
+<a href="https://modrinth.com/mod/craft-slabs-back-into-blocks" ><img src="https://img.shields.io/modrinth/dt/craft-slabs-back-into-blocks?style=for-the-badge&amp;logo=modrinth&amp;logoColor=white&amp;label=modrinth&amp;color=00AF5C" alt="Modrinth" /></a>
+</strong></h5></center>
+<center><p style="text-align: center;">This fully configurable mod lets you craft slabs back into full blocks, allowing you to reuse slabs you no longer need. To do this, simply place two slabs on top of each other in the crafting table. If a crafting recipe already exists for stacking two slabs, you can instead craft the full block by placing two slabs side by side in the crafting grid.</p>
+<img src="https://i.imgur.com/wDOxLzQ.png"/></center>
+<details>
+<summary><strong>Configuration</strong></summary>
+<p>You can configure this mod directly in-game or by editing the JSON file located at <code>config/slabstoblocks.json</code> in your profile folder. Please note that any changes will require restarting Minecraft to take effect.</p>
+<center><b>slabBlockList</b> - List of strings specifying which slabs are converted into which blocks in this pattern: <code>"slabname, blockname, pattern(not necessary)"</code></center>
+<br>
+<center>
+<p><strong>Few examples:</strong><code>"minecraft:smooth_stone_slab, minecraft:smooth_stone",</code>
+<img src="https://i.imgur.com/21wK6tK.png"/></p>
+<p><code>"minecraft:cut_copper_slab, minecraft:cut_copper, -",</code>
+<img src="https://i.imgur.com/PE1Yjew.png"/></p>
+<p><code>"minecraft:smooth_stone_slab, minecraft:smooth_stone, /",</code> <br>
+This is a not part of the default config it is just an example of what you can do with it
+<img src="https://i.imgur.com/Y4ONoOD.png"/></p>
+</center>
+</details>
+<center><p style="text-align: center;">
+<img src="https://i.imgur.com/oLLkoRH.png"/>
+<a href="https://www.curseforge.com/minecraft/mc-mods/deimos-fabric-forge-neoforge" rel="nofollow">
+<img src="https://i.imgur.com/6xg4Opb.png"/></a>
+<a href="https://modrinth.com/mod/deimos" rel="nofollow">
+<img src="https://i.imgur.com/iy76bgp.png"/></a>
+</p></center>
+<p style="text-align: center;"><a href="https://url-shortener.curseforge.com/oNMBl" rel="nofollow">
+<img src="https://i.imgur.com/y3LiTfU.png"/></a></p>
