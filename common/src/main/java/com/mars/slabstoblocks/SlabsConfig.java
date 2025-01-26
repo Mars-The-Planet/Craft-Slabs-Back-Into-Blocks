@@ -12,7 +12,7 @@ public class SlabsConfig extends DeimosConfig {
             "minecraft:birch_slab, minecraft:birch_planks",
             "minecraft:blackstone_slab, minecraft:blackstone",
             "minecraft:brick_slab, minecraft:bricks",
-            "minecraft:cobbled_deepslate_slab, minecraft:cobbled_deepslate",
+            "minecraft:cobbled_deepslate_slab, minecraft:cobbled_deepslate, -",
             "minecraft:cobblestone_slab, minecraft:cobblestone",
             "minecraft:crimson_slab, minecraft:crimson_planks",
             "minecraft:cut_copper_slab, minecraft:cut_copper, -",
