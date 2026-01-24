@@ -3,13 +3,7 @@ package com.mars.slabstoblocks;
 import com.google.common.collect.Lists;
 import com.mars.deimos.config.DeimosConfig;
 import com.mars.deimos.datagen.DeimosRecipeGenerator;
-import com.mars.slabstoblocks.platform.Services;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.levelgen.SurfaceSystem;
-
-import java.util.List;
+import net.minecraft.resources.Identifier;
 
 public class CommonClass {
     public static void init() {
@@ -23,36 +17,36 @@ public class CommonClass {
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(Identifier.parse(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "##"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        Identifier.parse(set[1]), 1);
             } else if (current.contains("/")) {
                 DeimosRecipeGenerator.createShapedRecipeJson(
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(Identifier.parse(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "# ",
                                 " #"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        Identifier.parse(set[1]), 1);
             } else {
                 DeimosRecipeGenerator.createShapedRecipeJson(
                         Lists.newArrayList(
                                 '#'
                         ),
-                        Lists.newArrayList(ResourceLocation.parse(set[0])),
+                        Lists.newArrayList(Identifier.parse(set[0])),
                         Lists.newArrayList("item"),
                         Lists.newArrayList(
                                 "#",
                                 "#"
                         ),
-                        ResourceLocation.parse(set[1]), 1);
+                        Identifier.parse(set[1]), 1);
             }
         }
     }
