@@ -6,7 +6,8 @@ import com.mars.deimos.config.DeimosConfig;
 import java.util.List;
 
 public class SlabsConfig extends DeimosConfig {
-    @Entry public static List<String> slabBlockList = Lists.newArrayList("minecraft:acacia_slab, minecraft:acacia_planks", 
+    @Entry public static boolean show_wishful_recipes_message = true;
+    @Entry public static List<String> slabBlockList = Lists.newArrayList("minecraft:acacia_slab, minecraft:acacia_planks",
         "minecraft:andesite_slab, minecraft:andesite",
         "minecraft:bamboo_mosaic_slab, minecraft:bamboo_mosaic",
         "minecraft:bamboo_slab, minecraft:bamboo_planks, -",
@@ -66,5 +67,14 @@ public class SlabsConfig extends DeimosConfig {
         "minecraft:waxed_exposed_cut_copper_slab, minecraft:waxed_exposed_cut_copper, -",
         "minecraft:waxed_oxidized_cut_copper_slab, minecraft:waxed_oxidized_cut_copper, -",
         "minecraft:waxed_weathered_cut_copper_slab, minecraft:waxed_weathered_cut_copper, -",
-        "minecraft:weathered_cut_copper_slab, minecraft:weathered_cut_copper");
+
+            "minecraft:cinnabar_slab, minecraft:cinnabar, -",
+            "minecraft:polished_cinnabar_slab, minecraft:polished_cinnabar",
+            "minecraft:cinnabar_brick_slab, minecraft:cinnabar_bricks",
+
+            "minecraft:sulfur_slab, minecraft:sulfur, -",
+            "minecraft:polished_sulfur_slab, minecraft:polished_sulfur",
+            "minecraft:sulfur_brick_slab, minecraft:sulfur_bricks",
+
+            "minecraft:weathered_cut_copper_slab, minecraft:weathered_cut_copper");
 }
