@@ -6,6 +6,7 @@ import com.mars.deimos.config.DeimosConfig;
 import java.util.List;
 
 public class SlabsConfig extends DeimosConfig {
+    @Entry public static boolean show_wishful_recipes_message = true;
     @Entry public static List<String> slabBlockList = Lists.newArrayList(
             "minecraft:acacia_slab, minecraft:acacia_planks",
             "minecraft:andesite_slab, minecraft:andesite",
